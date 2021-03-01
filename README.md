@@ -1,6 +1,21 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fastai/fastbook/master)  
 [English](./README.md) / [Spanish](./README_es.md) / [Korean](./README_ko.md) / [Chinese](./README_zh.md) / [Bengali](./README_bn.md) / [Indonesian](./README_id.md)
 
+# How to set up in Colab
+
+- clone the repository to local folder, syncronize with google drive
+- in colab open a notebook from github repo
+- mount google drive in colab
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+- change the directory the google drive folder where the fastbook is stored
+```
+%cd '/content/drive/MyDrive/fastbook'
+```
+- commit the updated notebook to GitHub
+
 # The fastai book
 
 These notebooks cover an introduction to deep learning, [fastai](https://docs.fast.ai/), and [PyTorch](https://pytorch.org/). fastai is a layered API for deep learning; for more information, see [the fastai paper](https://www.mdpi.com/2078-2489/11/2/108). Everything in this repo is copyright Jeremy Howard and Sylvain Gugger, 2020 onwards.
